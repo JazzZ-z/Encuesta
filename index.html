@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h1 id="title">Encuesta</h1>
+    <p id="description">Por favor, completa la siguiente encuesta:</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+        <label for="email" id="email-label">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+        <label for="number" id="number-label">Número:</label>
+        <input type="number" id="number" name="number" placeholder="Ingresa un número" min="1" max="100" required>
+        <label for="dropdown">Selecciona una opción:</label>
+<select id="dropdown" name="dropdown">
+    <option value="opcion1">Opción 1</option>
+    <option value="opcion2">Opción 2</option>
+</select>
+
+<fieldset>
+    <legend>Elije una opción:</legend>
+    <label>
+        <input type="radio" name="opcion" value="opcion_a"> Opción A
+    </label>
+    <label>
+        <input type="radio" name="opcion" value="opcion_b"> Opción B
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>Selecciona opciones:</legend>
+    <label>
+        <input type="checkbox" name="opcion_checkbox" value="opcion_checkbox1"> Opción Checkbox 1
+    </label>
+    <label>
+        <input type="checkbox" name="opcion_checkbox" value="opcion_checkbox2"> Opción Checkbox 2
+<label for="comments">Comentarios adicionales:</label>
+<textarea id="comments" name="comments" placeholder="Escribe tus comentarios aquí"></textarea>
+
+<input type="submit" id="submit" value="Enviar">
+
+    </label>
+</fieldset>
+    </form>
+</body>
+</html>
